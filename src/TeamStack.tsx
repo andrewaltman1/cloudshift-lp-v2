@@ -5,11 +5,11 @@ const team = [{ name: 'Andrew Altman', link: 'https://www.linkedin.com/in/andrew
 
 const cards = team.map((member) => {
     return (
-        <Card sx={{ minWidth: 275, maxWidth: 375 }}>
+        <Card key={member.name} sx={{ width: '90%', minWidth: 275, maxWidth: 375, backgroundColor: '#dee7ed66' }}>
             <Link href={member.link} target='_blank' rel="noopener" underline="none" sx={{ color: 'inherit' }}>
                 <CardActionArea >
                     <CardContent sx={{ display: 'flex', flexFlow: 'column nowrap', justifyContent: 'space-around', alignItems: 'center', gap: '1rem' }}>
-                        <Typography variant="h6">
+                        <Typography variant="h6" sx={{ fontFamily: 'Cain' }}>
                             {member.name}
                         </Typography>
                         <Avatar alt={member.name} src={member.image} sx={{ width: '40%', height: '40%' }} />
@@ -23,7 +23,10 @@ const cards = team.map((member) => {
 
 export default function TeamStack() {
     return (
-        <Stack direction="column" spacing={2} >
+        <Stack direction="column" spacing={2} sx={{
+            padding: '1rem 0',
+            alignItems: 'center',
+        }}>
             <Typography variant="h4" sx={{ textAlign: 'center' }}>The Team</Typography>
             {cards}
         </Stack>

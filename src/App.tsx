@@ -1,17 +1,25 @@
 import ResponsiveAppBar from "./ResponsiveAppBar";
-import Article from "./Article";
+import Articles from "./Articles";
 import TeamStack from "./TeamStack";
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      "Cabin, sans-serif",
+      'Play, sans-serif'
+    ].join(','),
+  },
+});
 
 function App() {
   return (
     <>
-      <ResponsiveAppBar />
-      <Article />
-      <TeamStack />
+      <ThemeProvider theme={theme} >
+        <ResponsiveAppBar />
+        <Articles />
+        <TeamStack /></ThemeProvider>
     </>
 
   );
