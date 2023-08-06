@@ -1,4 +1,4 @@
-# CloudShift Landing Page
+# CloudShift Landing Page Version 2
 
 Simple rebuild of cloudshift.dev with TypeScript and Material UI
 
