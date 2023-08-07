@@ -30,7 +30,7 @@ function ResponsiveAppBar() {
     return (
         <AppBar position="static" sx={
             {
-                background: 'linear-gradient(to right, #f3f1f8dd, #2278ab55)',
+                backgroundColor: '#36bfff11',
                 color: '#272839',
             }
         }>
@@ -41,7 +41,7 @@ function ResponsiveAppBar() {
                         variant="h5"
                         noWrap
                         component="a"
-                        href="/"
+                        href="https://www.cloudshift.dev"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -98,7 +98,7 @@ function ResponsiveAppBar() {
                         variant="h5"
                         noWrap
                         component="a"
-                        href=""
+                        href="https://www.cloudshift.dev"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
@@ -118,7 +118,7 @@ function ResponsiveAppBar() {
                                 <Button
                                     key={page.title}
                                     onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'inherit', display: 'block', ":hover": { backgroundColor: '#f3f1f8dd', boxShadow: '0px 0px 5px 5px #f3f1f8dd' } }}
+                                    sx={{ my: 2, color: 'inherit', display: 'block', ":hover": { backgroundColor: '#ffffffdd', boxShadow: '0px 0px 5px 5px #ffffffdd' } }}
                                 >
                                     {page.title}
                                 </Button>

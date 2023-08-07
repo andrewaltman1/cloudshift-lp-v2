@@ -15,11 +15,12 @@ const theme = createTheme({
   },
 });
 
+
 function App() {
   return (
     <>
       <ThemeProvider theme={theme} >
-        <Paper elevation={-1} sx={{ backgroundColor: '#ffffffdd' }}>
+        <Paper elevation={0} sx={{ backgroundColor: '#ffffffcc' }}>
           <ResponsiveAppBar />
           <Articles />
           <Divider variant="middle" />

@@ -12,7 +12,7 @@ const cards = team.map((member) => {
                 <CardActionArea sx={{ width: 'inherit', height: 'inherit', minWidth: 275, maxWidth: 375 }}>
                     <CardContent sx={{ display: 'flex', flexFlow: 'column nowrap', justifyContent: 'space-evenly', alignItems: 'center', width: 'inherit', height: 'inherit', padding: '0', minWidth: 275, maxWidth: 375 }}>
                         <Typography variant="h5" sx={{ fontFamily: 'Cabin', position: 'relative' }}>
-                            {member.name} <LinkedInIcon sx={{ fontSize: '1.5rem', position: 'relative', top: '4px' }} />
+                            {member.name} <LinkedInIcon sx={{ fontSize: '1.5rem', position: 'relative', top: '4px', color: '#2278ab' }} />
                         </Typography>
                         <Avatar alt={member.name} src={member.image} sx={{ width: '8rem', height: '8rem', boxShadow: '0px 0px 5px 5px #dddddd55' }} />
                     </CardContent>
