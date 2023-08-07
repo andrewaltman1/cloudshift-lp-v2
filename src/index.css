@@ -2,7 +2,14 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  /* background: linear-gradient(to right, #f0f3f311, #a8c3e022) 
-     */
-  background-color: #f0f3f311;
+  height: 100%;
+  background: linear-gradient(to right, #f0f3f333, #a8c3e033);
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-image: url('./assets/sonny-mauricio-kIr8e-01eAw-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }

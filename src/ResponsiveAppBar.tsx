@@ -13,7 +13,7 @@ import CloudShiftIcon from './CloudShiftIcon';
 import Link from '@mui/material/Link';
 
 
-const pages = [{ linK: 'https://github.com/oslabs-beta/CloudShift#what-cloudshift-does-and-doesnt', title: 'How It Works' }, { linK: 'https://medium.com/cloudshift/cloudshift-data-migration-simplified-f5c4848d7cb8', title: 'Our Story' }, { linK: 'https://www.linkedin.com/company/93845906', title: 'Contact' }];
+const pages = [{ linK: 'https://github.com/oslabs-beta/CloudShift', title: 'Download' }, { linK: 'https://github.com/oslabs-beta/CloudShift#what-cloudshift-does-and-doesnt', title: 'How It Works' }, { linK: 'https://medium.com/cloudshift/cloudshift-data-migration-simplified-f5c4848d7cb8', title: 'Our Story' }, { linK: 'https://www.linkedin.com/company/93845906', title: 'Contact' }];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -30,15 +30,15 @@ function ResponsiveAppBar() {
     return (
         <AppBar position="static" sx={
             {
-                background: 'linear-gradient(to right, #f0f3f3, #a8c3e0)',
-                color: '#091015d0',
+                background: 'linear-gradient(to right, #f3f1f8dd, #2278ab55)',
+                color: '#272839',
             }
         }>
             <Container maxWidth="xl" >
                 <Toolbar disableGutters>
-                    <CloudShiftIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    <CloudShiftIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, height: '2rem', width: '2rem' }} />
                     <Typography
-                        variant="h6"
+                        variant="h5"
                         noWrap
                         component="a"
                         href="/"
@@ -112,13 +112,13 @@ function ResponsiveAppBar() {
                     >
                         CloudShift
                     </Typography>
-                    <Box sx={{ flexGrow: 1, justifyContent: 'flex-end', display: { xs: 'none', md: 'flex' } }}>
+                    <Box sx={{ flexGrow: 1, justifyContent: 'flex-end', gap: '2rem', display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Link key={page.title} href={page.linK} target='_blank' rel="noopener" underline="none" sx={{ color: 'inherit' }}>
                                 <Button
                                     key={page.title}
                                     onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'inherit', display: 'block' }}
+                                    sx={{ my: 2, color: 'inherit', display: 'block', ":hover": { backgroundColor: '#f3f1f8dd', boxShadow: '0px 0px 5px 5px #f3f1f8dd' } }}
                                 >
                                     {page.title}
                                 </Button>
