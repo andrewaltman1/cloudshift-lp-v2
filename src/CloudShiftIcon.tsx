@@ -1,6 +1,10 @@
 import { SvgIcon } from "@mui/material"
 
-export default function CloudShiftIcon({sx}) {
+interface Props {
+    sx: { display: { xs: string, md: string }, mr: number, height?: string, width?: string }
+}
+
+export default function CloudShiftIcon({ sx }: Props): JSX.Element {
     return (
         <SvgIcon sx={sx}>
             <svg width="100%" height="100%" viewBox="0 0 99 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve">
